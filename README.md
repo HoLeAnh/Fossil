@@ -9,11 +9,11 @@ Package globalData : include a global vaiable for run test sequence
 - Question 1 : run by main method at Question1.java
 
 - Question 2 : run by main method at Question2.java
-    + Design run like a interface and 2 child class BMW and Toyota will inheritance and overwrite methods of car
+    + Design run like a interface and 2 child class BMW and Toyota will inheritance and overwrite methods of class car
     + In runtest, put 2 object Toyota and BMW to 2 Thread and run them.
     
 - Question 3 : 
-    + Order of outputs in 2 and 1 different because Question1, we init 2 car in one Thread and when run , 2 object will run run one by one sequence, car1 run done then car2 run, so we see 100 100 100 100 100 ...... 200 200 200 200 200. With Question2, we put 2 car to 2 different Thread and when 2 Thread start with start at same time and car.run at same time also.
+    + Order of outputs in 2 and 1 different because Question1, we init 2 car in one Thread and when run , 2 object will run one by one sequence, car1 run done then car2 run, so we see 100 100 100 100 100 ...... 200 200 200 200 200. With Question2, we put 2 car to 2 different Thread and when 2 Thread start with start at same time and method run() at same time also.
     
 - Question 4 : 
     + I will create a method runSequence for each car. In this method, after print maxSpeed, there is a flag to wait for other car print maxSpeed and switch the flag. The program keeps running until the two car take print each maxSpeed until 10 times.
