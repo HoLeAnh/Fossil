@@ -1,9 +1,9 @@
 # Fossil
 
 # Structure
-Package GlobalData : include classes for interface car and 2 child class BMW and Toyota
-Package runTest : include main methor to run test for each question : 1, 2, 4
-Package globalData : include a global vaiable for run test sequence
+- Package GlobalData : include classes for interface car and 2 child class BMW and Toyota
+- Package runTest : include main methor to run test for each question : 1, 2, 4
+- Package globalData : include a global vaiable for run test sequence
 
 # How to run
 - Question 1 : run by main method at Question1.java
