@@ -1,6 +1,6 @@
 package carClass;
 
-import GlobalData.GlobalFlag;
+import globalData.GlobalFlag;
 
 public class Toyota implements Car {
 
