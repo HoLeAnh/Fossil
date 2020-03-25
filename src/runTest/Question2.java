@@ -10,18 +10,10 @@ public class Question2 {
 		Car toyota = new Toyota();
 		Car bmw = new BMW();
 
-		Thread thread1 = new Thread() {
-			public void run() {
-				toyota.run();
-			}
-		};
-		Thread thread2 = new Thread() {
-			public void run() {
-				bmw.run();
-			}
-		};
-		
-		thread1.start();
-		thread2.start();
+		Thread t1 = new Thread(toyota);
+		Thread t2 = new Thread(bmw);
+
+		t1.start();
+		t2.start();
 	}
 }

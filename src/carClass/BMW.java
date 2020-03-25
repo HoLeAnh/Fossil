@@ -2,23 +2,10 @@ package carClass;
 
 import globalData.GlobalFlag;
 
-public class BMW implements Car {
+public class BMW extends Car {
 
-	private int maxSpeed = 200;
-
-	@Override
-	public void run() {
-		for (int i = 0; i < 10; i++) {
-			System.out.println(maxSpeed);
-		}
-	}
-
-	@Override
-	public void info() {
-		System.out.println("wheel = " + wheels);
-		System.out.println("doors = " + doors);
-		System.out.println("seats = " + seats);
-		System.out.println("maxSpeed = " + maxSpeed);
+	public BMW() {
+		maxSpeed = 200;
 	}
 
 	@Override
@@ -35,4 +22,5 @@ public class BMW implements Car {
 			GlobalFlag.flag = 1;
 		}
 	}
+	
 }
